@@ -73,7 +73,7 @@ console.log(student,"pop")
 //splice (start ,deletecount,item) eklemem
 
 
-//objeyey birsey eklemek
+//objeyey birsey eklemek array de ekleyebilirz
 emp = {
     firstname:"denme",
     lastname:"son"
@@ -85,4 +85,167 @@ console.log(emp)
 emp["mail"]= "abc"
 console.log(emp)
 
+
+let a = 0
  
+
+const artit = ()=>{
+    for(a=0 ;a<10 ; a++)
+    console.log(a)
+}
+ artit()
+
+///,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+
+
+const aAry = []
+let i = 0
+
+function aAr(){
+    
+    if(i %3 == 0 && i %5 != 0){
+        {aAry.push("fiyy")}}
+    else if(i %5 == 0 && i%3 != 0){
+            aAry.push("buyy")}
+            else if(i%3 == 0 && i%5 == 0){
+                aAry.push("FiyyBuyy")
+            }
+            else{ aAry.push(i)}
+            
+            i++
+
+            return aAry
+}
+
+
+console.log(aAr())
+console.log(aAr())
+console.log(aAr())
+console.log(aAr())
+console.log(aAr())
+console.log(aAr())
+console.log(aAr())
+console.log(aAr())
+//.............Forrrrrrrrrrrrrr
+
+
+for(let rep = 1 ; rep<=30 ; rep++) 
+{console.log(`push ${rep}`)}
+
+const arr = []
+
+
+function denek(){
+for(let rep = 1 ; rep<=100 ; rep++){
+
+    if(rep%3 == 0 && rep%5 != 0){ arr.push("fiyy")}
+     else if(rep%5 == 0 && rep%3 != 0){arr.push("buyy")}
+     else if(rep%5 == 0 && rep%3 == 0){arr.push("fiybuyy")}
+    else{
+        arr.push(rep)
+    }
+}
+    return arr
+}
+
+console.log(denek())
+
+
+const arrrt = ["deneme","calisma","memeur"]
+
+
+for(let i = 0 ; i<arrrt.length ;i++){
+    console.log(arrrt[i])
+}
+//  contunie break
+
+
+const deene = []
+
+for(let i = 0; i<=100;i++){
+    if(i %2 != 0) continue
+    if(i == 50) break
+    deene.push(i)
+}
+
+console.log(deene)
+
+for(let i = 1;i<=3; i++ ){
+    console.log(`-------------------ex${i}`)
+    for(let k = 1; k<=5 ; k++){
+        console.log(`repeat${k}`)
+    }
+}
+
+//while
+
+let rep = 1
+while(rep <=10){
+    console.log(`push up ${rep}`)
+    rep++
+}
+//Math.trunc ondalik sayidan kurtarir 
+let mat =Math.trunc(Math.random()*6)+1
+console.log(mat)
+
+while(mat !== 6){
+    console.log(`you rolled ${mat}`)
+    mat =Math.trunc(Math.random()*6)+1
+    console.log(mat == 6 ? "win " :"verloren") 
+}
+//const veri = prompt("sayi griniy")
+
+//console.log(veri)
+//let summ = 0
+//let ad = veri.length
+//console.log(ad)
+//function odev(){
+    //let adw = veri.split("")
+  //  console.log(adw)
+   //for(let i = 0 ;i<ad; i++){
+    //summ += adw[i] **ad
+    
+   
+  // }
+   //return summ == veri ?`${veri} is Armong` :`${veri} is Armong not`
+
+//}
+
+//console.log(odev())
+
+//-----------------deneme
+let p=[1,2,7]
+console.log(p)
+const dere= []
+
+function fg(){
+    
+    for(i=0;i<p.length;i++){
+        let son = p[i]+i
+        dere.push(son)
+        console.log(dere)
+    }
+    return dere 
+}
+
+console.log(fg())
+
+//''--------------
+
+
+
+function wert(a,b){
+    console.log(a,b)
+    let d =Number(a)
+    console.log(d)
+    let m = Number(b)
+    if(d == 10 || m == 10 || d+m == 10){
+        console.log("true")
+    } else{
+      console.log("false")
+    }
+    return
+}
+
+
+console.log(wert(3cd,6))
