@@ -240,12 +240,76 @@ function wert(a,b){
     console.log(d)
     let m = Number(b)
     if(d == 10 || m == 10 || d+m == 10){
-        console.log("true")
+       return true
     } else{
-      console.log("false")
+      return false
     }
-    return
+    
 }
 
 
-console.log(wert(3cd,6))
+console.log(wert(3,8))
+
+
+function kazan(x){
+    let k = x.split("")
+    console.log(k)
+    for(i=0 ; i<k.length ; i++){
+        let lk= k[0]
+        console.log(lk,"lk")
+        let po= k[k.length-1]
+        console.log(po,"po")
+       if(k[0] != k[k.length-1]){
+        console.log("okey")
+       }else{ 
+        console.log("denemeeeee")
+       }
+
+    }
+    return
+
+}
+
+console.log(kazan("kazak"))
+
+//bu komut tersine ceviri ve array larda kullaniliir regex.com var buna bak
+let df = ["asdf","dpppp"]
+console.log(df.reverse())
+//bu bize arraylari stringe cevirir
+console.log(df.join(""))
+//----------------------
+
+
+function guyel(str){
+    var eliReg =/[\W_]/g
+    let lowerC =str.toLowerCase().replace(eliReg,"")
+    let revS= lowerC.split("").reverse().join("")
+    return(lowerC === revS)
+
+
+}
+
+console.log(guyel("ey edip adanada pide ye"))
+//--------------------------
+
+let dxx = prompt("bitet ein Number ")
+let fgx =  Number(dxx)
+if(fgx < 0 ||  Number.isInteger(fgx) == false ||isNaN(dxx)) alert ("baba patladik")
+
+
+function isPrime(num){
+    if(num === 1){
+        return `${num} ist okey`
+    }
+    if(num === 2){
+        return `${num} ist false`
+    }
+    for(let i = 2;i<num;i++){
+        return num%i == 0 ? "baba patladik" :  "olduk be"
+    }
+
+
+}
+
+console.log(isPrime(dxx))
+//--------------------------
