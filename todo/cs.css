@@ -1,0 +1,12 @@
+.td{
+    margin: auto;
+    color: aquamarine;
+    background-color: red;
+}
+.content{
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}

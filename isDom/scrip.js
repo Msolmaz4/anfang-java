@@ -101,11 +101,11 @@ let work = document.getElementById("job")
 //--------------------farkli olrak for of 
 
 for (el of pozisition){
-    work.innerHTML+= `<option>${el}</oprtion>`}
+    work.innerHTML+= `<option >${el}</oprtion>`}
 
 //------------FOREACH BUNDA FOKSIYONDA EKLENIYOR
 
-pozisition.forEach(el=>work.innerHTML+=`<option>${el}</oprtion>` )
+pozisition.forEach(el=>work.innerHTML+=`<option value="${el}">${el}</oprtion>` )
 
 
 //-------------style degistirme
@@ -121,5 +121,32 @@ button.style.cssText =`
 width:25%;
 height:5vh;
 background-color:antiquewhite;
-
 `
+////////////////------------
+
+const fir= document.getElementById("first-name")
+const car =document.getElementById("cara")
+ 
+
+const showCara= ()=>{
+    const val = fir.value
+    car.innerText = val.length +"/40"
+    if(fir.value.length == 0){
+        car.style.display ="none"
+    }
+}
+
+
+
+fir.addEventListener("keyup",showCara)
+
+//onchange evvent genelde selectlerde kullanilir
+
+const posit = document.getElementById("posit")
+
+work.addEventListener("change",function(){
+    posit.innerText=`sen sectin${work.value}`
+
+
+
+})
