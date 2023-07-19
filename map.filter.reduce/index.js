@@ -82,3 +82,36 @@ data.map(el=>{
 der.appendChild(newDiv)
 
 })
+
+//--------------filter
+
+
+const numver= [1,2,23,33,44,4,44,5,55,66,6]
+
+const filtered = numver.filter(el =>el%2== 0)
+console.log(filtered,"fi;ter ilk")
+
+const arr2 = [1,2,2,2,3,3,3,4,5,6]
+
+function filterMet(arr2){
+  return arr2.filter((el,i)=>el != arr2[i+1]) //yan yan aise
+
+}
+
+console.log(filterMet(arr2),"filter")
+
+//-----------------------re3duce
+
+
+//arr.reduce((prevValue,currentValue,i,r))
+//normalkde reduc(function,initialValue)
+
+const number2 = [1,3,44,90,23,41,7,9]
+
+
+const dreeee= number2.reduce(function(prevValue,currentValue) {
+  console.log("prev",+prevValue)
+  console.log("cureen",+currentValue)
+
+  return prevValue +currentValue
+},12) // buraya deger gitmesek 0 alir  biz on kik verdik b u 12 alir ilj prevent
