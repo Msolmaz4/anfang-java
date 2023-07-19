@@ -9,6 +9,7 @@ const addListe= ()=>{
     const val = inpt.value
     console.log(val)
 
+if(val.trim() !== ""){
 
     const listeEle= document.createElement("li")
 
@@ -43,6 +44,10 @@ const addListe= ()=>{
 
 
 
+
+}
+
+   
    inpt.value= ""
 
 }
