@@ -115,3 +115,24 @@ const dreeee= number2.reduce(function(prevValue,currentValue) {
 
   return prevValue +currentValue
 },12) // buraya deger gitmesek 0 alir  biz on kik verdik b u 12 alir ilj prevent
+
+
+const art =[ "23","3333333","iuk","gtyi"]
+
+function filterString(arr,minLength,maxLengt){
+  //console.log(minLength,maxLengt) burada undefined gelir gelip glemdih0g gormek icin
+  arraySring =art.filter(str =>str.length >= (minLength ?? 0)) // soldaki deger nun vewya undefined gleince sagdaki isleme aliyor 
+  arraySring =art.filter(str => str.length <= (maxLengt ?? str.length))//Nullish Coalesing operatörü,
+  return arraySring
+
+}
+
+console.log(filterString(art,4))
+
+// Nullish Coalesing operatörü, 
+
+let left = "a"
+let right = "b "
+
+const resi = left ?? right //sol tarfadaki sifir veye undefinet degilse soldakini cevur 
+console.log(resi,"Nullish Coalesing operatörü,")
